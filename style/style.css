@@ -1,0 +1,680 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-background: #fff;
+  --secondary-background: #3c4761;
+  --secondary-background-fallback: rgba(63, 71, 97, 0.9);
+  --primary-color: #3c4761;
+  --secondary-color: #fff;
+  --grey: #f9f9f9;
+  --grey-dark: #ddd;
+}
+
+.container .header {
+  color: #ffffff;
+  background: url(../assets/bg1banner.png) no-repeat;
+  background-size: cover;
+}
+.container .header a {
+  text-decoration: none;
+  color: #e6e6e6;
+}
+.container .header .header__name_nav, .container .header .header__hamberg {
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.8rem;
+}
+.container .header .header__name_nav .header__name, .container .header .header__hamberg .header__name {
+  padding: 2rem;
+}
+.container .header .header__name_nav .header__nav_links ul, .container .header .header__hamberg .header__nav_links ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.container .header .header__name_nav .header__nav_links ul li, .container .header .header__hamberg .header__nav_links ul li {
+  padding: 2rem;
+}
+.container .header .header__name_nav .header__nav_links ul li:hover, .container .header .header__hamberg .header__nav_links ul li:hover {
+  color: #61DAFB;
+  font-weight: 700;
+  cursor: pointer;
+}
+.container .header .hamberg__close {
+  float: right;
+  font-size: 2rem;
+  padding: 2rem;
+  display: none;
+}
+.container .header .show_hamberg {
+  float: right;
+  font-size: 2rem;
+  padding: 2rem;
+  display: none;
+}
+.container .header .header__hamberg {
+  text-align: center;
+  padding: 10%;
+  display: none;
+}
+.container .header .header__hamberg .header__nav_links ul {
+  display: block;
+}
+.container .header .header__banner__name_social_handles {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.container .header .header__banner__name_social_handles .banner__social_handles ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.container .header .header__banner__name_social_handles .banner__social_handles ul li {
+  margin: 1rem;
+}
+.container .header .header__banner__name_social_handles .banner__social_handles ul li:hover {
+  color: #61DAFB;
+  font-weight: 700;
+  cursor: pointer;
+}
+.container main .portfolio_container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.container main .portfolio_container .portfolio {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+.container main .portfolio_container .portfolio .protfolio_title {
+  padding-top: 2rem;
+}
+.container main .portfolio_container .portfolio .protfolio_btn {
+  padding: 1rem;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: transparent;
+}
+.container main .portfolio_container .portfolio .image_gallery {
+  margin-top: 3%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.container main .portfolio_container .portfolio .image_gallery .image_gallery_items {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 1%;
+  background-color: #fff;
+}
+.container main .portfolio_container .portfolio .image_gallery .item1 {
+  position: relative;
+}
+.container main .portfolio_container .portfolio .image_gallery .sliding_img_div {
+  position: absolute;
+  width: 85%;
+  top: 0;
+  overflow: hidden;
+  height: 91%;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+.container main .portfolio_container .portfolio .image_gallery #sliding_img {
+  width: 100%;
+  margin-left: 1rem;
+}
+.container main .portfolio_container .portfolio .image_gallery .slider_circle {
+  position: absolute;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  top: 33%;
+  right: 4%;
+  background-color: rgba(64, 64, 255, 0.728);
+  border: none;
+  cursor: ew-resize;
+}
+.container main .portfolio_container .portfolio .image_gallery .item2 {
+  cursor: none;
+}
+.container main .portfolio_container .portfolio .image_gallery .img_magnifier {
+  position: absolute;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  border: 2px solid #000;
+}
+.container main .portfolio_container .portfolio .image_gallery #iem_3_img_div {
+  transition: transform 0.8s;
+}
+.container main .portfolio_container .portfolio .image_gallery .item3 {
+  position: relative;
+}
+.container main .portfolio_container .portfolio .image_gallery .item3:hover #iem_3_img_div {
+  transform: rotateY(90deg);
+  visibility: hidden;
+}
+.container main .portfolio_container .portfolio .image_gallery .ecommerce_backside {
+  text-align: center;
+  position: absolute;
+  width: 80%;
+  height: 60%;
+  margin-left: 10%;
+  margin-top: 5%;
+  background-color: #3c4761;
+  color: #fff;
+  transition: transform 0.8s;
+  visibility: hidden;
+}
+.container main .portfolio_container .portfolio .image_gallery .item3:hover .ecommerce_backside {
+  visibility: visible;
+  transform: rotateY(-180deg);
+}
+.container main .portfolio_container .portfolio .image_gallery .item3:hover .ecommerce_backside p {
+  transform: rotateY(-180deg);
+}
+.container main .portfolio_container .portfolio .image_gallery .item_image {
+  display: inline-block;
+  display: flex;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.container main .portfolio_container .portfolio .image_gallery .item_image_img {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+.container main .portfolio_container .portfolio .image_gallery #zoomed_image_magnified {
+  position: absolute;
+  transform: scale(1.1);
+  clip-path: circle(15% at 50% 50%);
+  /* transition: 0.1s linear; */
+  transition: transform 0.8s;
+  border: 2px solid black;
+}
+.container main .portfolio_container .portfolio .image_gallery .item_description {
+  height: 20%;
+  margin-left: 10%;
+  margin: 5%;
+}
+.container main .portfolio_container .portfolio .image_gallery #item4_img:hover {
+  animation: shake 0.1s;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0);
+  }
+  50% {
+    transform: translate(-1px, 5px) rotate(-1deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+.container main .portfolio_container .portfolio .image_gallery #item5_img {
+  position: relative;
+}
+.container main .portfolio_container .portfolio .image_gallery #overlapping_img {
+  display: none;
+  position: absolute;
+  margin-left: 10%;
+  margin-top: 5%;
+  width: 80%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.container main .portfolio_container .portfolio .image_gallery #item5_img:hover #overlapping_img {
+  display: inline;
+}
+.container main .portfolio_container .portfolio .image_gallery .drop_effect {
+  position: relative;
+  width: 100%;
+}
+.container main .portfolio_container .portfolio .image_gallery #item6_img {
+  width: 80%;
+  box-shadow: 0 0 6px 0;
+}
+.container main .portfolio_container .portfolio .image_gallery .item_dropdown {
+  position: absolute;
+  background-color: var(--secondary-background);
+  top: 0;
+  height: 0%;
+  width: 80%;
+  overflow: hidden;
+  transition: height 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15%;
+  margin-top: 5%;
+  color: #fff;
+}
+.container main .portfolio_container .portfolio .image_gallery .item6:hover #drop {
+  height: 90%;
+}
+.container main .portfolio_container .portfolio .image_gallery .items_button {
+  width: 100%;
+  background-color: #000;
+  width: 90%;
+  margin-top: 0.5rem;
+  color: #fff;
+  padding: 0.5rem;
+  margin: 5%;
+  cursor: pointer;
+}
+.container main .portfolio_container .portfolio .image_gallery .item_title {
+  font-size: 1.1rem;
+  font-weight: 900;
+  margin: 5%;
+}
+.container main .portfolio_container .portfolio .image_gallery .item_profession_description {
+  font-size: 0.9rem;
+  font-weight: 200;
+  color: #bdbdbd;
+  margin: 5%;
+}
+.container main .portfolio_container .portfolio .image_gallery .item_detail {
+  margin: 5%;
+}
+.container main .portfolio_container .portfolio .image_gallery .item_email {
+  margin: 5%;
+}
+.container main .portfolio_container .portfolio .image_gallery .center {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.container main .portfolio_container .portfolio .image_gallery .black {
+  background-color: #000;
+  margin-top: 5rem;
+}
+.container main .main__about_me {
+  display: flex;
+  gap: 0.5rem;
+}
+.container main .main__about_me .about_me__image {
+  width: 100%;
+}
+.container main .main__about_me .about_me__image img {
+  height: 90vh;
+  margin-top: 2rem;
+  border-radius: 2rem;
+}
+.container main .main__about_me .about_me__description {
+  text-align: center;
+}
+.container main .main__about_me .about_me__description h2 {
+  padding: 2rem;
+}
+.container main .main__about_me .about_me__description .description__content {
+  margin-top: 2rem;
+  padding: 4rem;
+}
+.container main .main__about_me .about_me__description .description_skill_chart {
+  margin-top: 3rem;
+}
+.container main .main__about_me .about_me__description .description_skill_chart .skill_chart__skills {
+  position: relative;
+}
+.container main .main__about_me .about_me__description .description_skill_chart .skill_chart__skills .skill {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.container main .main__about_me .about_me__description .description_skill_chart .skill_chart__skills #skill_1 {
+  margin-left: 1rem;
+}
+.container main .main__about_me .about_me__description .description_skill_chart .skill_chart__skills #skill_1::before {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 22%;
+  height: 0.5rem;
+  width: 75%;
+  background-color: #e6e6e6;
+}
+.container main .main__about_me .about_me__description .description_skill_chart .skill_chart__skills #skill_1::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 22%;
+  height: 0.5rem;
+  width: 70%;
+  background-color: #010101;
+}
+.container main .main__about_me .about_me__description .description_skill_chart .skill_chart__skills #skill_2 {
+  margin-left: 6%;
+}
+.container main .main__about_me .about_me__description .description_skill_chart .skill_chart__skills #skill_2::before {
+  content: "";
+  position: absolute;
+  top: 46%;
+  left: 22%;
+  height: 0.5rem;
+  width: 75%;
+  background-color: rgb(189, 189, 189);
+}
+.container main .main__about_me .about_me__description .description_skill_chart .skill_chart__skills #skill_2::after {
+  content: "";
+  position: absolute;
+  top: 46%;
+  left: 22%;
+  height: 0.5rem;
+  width: 69%;
+  background-color: #000000;
+}
+.container main .main__about_me .about_me__description .description_skill_chart .skill_chart__skills #skill_3 {
+  margin-left: 0;
+}
+.container main .main__about_me .about_me__description .description_skill_chart .skill_chart__skills #skill_3::before {
+  content: "";
+  position: absolute;
+  top: 69%;
+  left: 22%;
+  height: 0.5rem;
+  width: 75%;
+  background-color: rgb(189, 189, 189);
+}
+.container main .main__about_me .about_me__description .description_skill_chart .skill_chart__skills #skill_3::after {
+  content: "";
+  position: absolute;
+  top: 69%;
+  left: 22%;
+  height: 0.5rem;
+  width: 65%;
+  background-color: #000000;
+}
+.container main .main__about_me .about_me__description .description_skill_chart .skill_chart__skills #skill_4 {
+  margin-left: 6%;
+}
+.container main .main__about_me .about_me__description .description_skill_chart .skill_chart__skills #skill_4::before {
+  content: "";
+  position: absolute;
+  top: 93%;
+  left: 22%;
+  height: 0.5rem;
+  width: 75%;
+  background-color: rgb(189, 189, 189);
+}
+.container main .main__about_me .about_me__description .description_skill_chart .skill_chart__skills #skill_4::after {
+  content: "";
+  position: absolute;
+  top: 93%;
+  left: 22%;
+  height: 0.5rem;
+  width: 62%;
+  background-color: #000000;
+}
+.container main .main__personal_details_container {
+  display: flex;
+  width: 100%;
+  background-color: #f5f5f5;
+}
+.container main .main__personal_details_container .personal_details {
+  text-align: center;
+  position: relative;
+  height: 10rem;
+  width: 33%;
+  padding: 3rem;
+}
+.container main .main__personal_details_container .personal_details::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 20%;
+  height: 60%;
+  border-right: 2px solid rgb(0, 0, 0);
+}
+.container main .main__personal_details_container .personal_details .icon {
+  font-size: 2rem;
+  color: #000000;
+}
+.container main .main__personal_details_container .personal_details .contact_info {
+  margin-top: 5%;
+  font-size: 1.3rem;
+}
+.container main .main__personal_details_container .personal_details .personal_details_info {
+  font-size: 0.8rem;
+}
+.container main .project_sections_div {
+  background-color: #f5f5f5;
+  height: 100%;
+}
+.container main .project_sections_div .project_sections__heading {
+  margin-top: 2rem;
+  text-align: center;
+}
+.container main .project_sections_div .project_sections__heading h2 {
+  padding: 2rem;
+}
+.container main .project_sections_div .project_section {
+  display: grid;
+  gap: 1rem;
+  padding: 2rem;
+  margin: 1rem;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1rem;
+}
+.container main .project_sections_div .project_section .project {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #000000;
+  height: auto;
+  max-width: 100%;
+}
+.container main .project_sections_div .project_section .project img {
+  height: 9rem;
+  padding: 1rem;
+}
+.container main .project_sections_div .project_section .project .view_project_button {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: #000000;
+  background-color: #ffffff;
+  margin: 2rem;
+  cursor: pointer;
+}
+.container main .project_sections_div .project_section .project .view_project_button:hover {
+  color: #61DAFB;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: #000000;
+}
+.container main .main__testimonials_container {
+  background-color: #f5f5f5;
+}
+.container main .main__testimonials_container .testimonials_heading {
+  text-align: center;
+}
+.container main .main__testimonials_container .testimonials_heading h2 {
+  padding: 2rem;
+}
+.container main .main__testimonials_container .main__testimonials {
+  display: grid;
+  text-align: center;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.container main .main__testimonials_container .main__testimonials .testimonials {
+  width: 100%;
+}
+.container main .main__testimonials_container .main__testimonials .testimonials img {
+  margin-top: 2rem;
+  height: 8rem;
+  width: 33%;
+  border-radius: 50%;
+}
+.container main .main__testimonials_container .main__testimonials .testimonials .testimonial_description {
+  padding: 2rem;
+}
+.container main .main__testimonials_container .main__testimonials .testimonials .testimonial_description section {
+  font-size: 3rem;
+}
+.container main .main__testimonials_container .main__testimonials .testimonials .testimonial_description .testimonials__name {
+  font-size: 1rem;
+}
+.container main .main__testimonials_container .main__testimonials .testimonials .testimonial_description .testimonials__post {
+  font-size: 0.5rem;
+}
+.container main .gitlab_activity_div {
+  text-align: center;
+}
+.container main .gitlab_activity_div .gitlab_activity_div__heading h2 {
+  margin: 2rem;
+}
+.container main .gitlab_activity_div .gitlab_activity_div_body img {
+  width: 60%;
+  max-height: 484px;
+}
+.container main .main__download_resume {
+  text-align: center;
+  height: 100%;
+}
+.container main .main__download_resume h2 {
+  padding: 2rem;
+  padding: 2rem;
+}
+.container main .main__download_resume button {
+  margin: 2rem;
+  padding: 0.5rem;
+  background-color: #393939;
+  color: #fffdff;
+  cursor: pointer;
+}
+.container main .main__download_resume button:hover {
+  color: #61DAFB;
+  font-weight: 700;
+  cursor: pointer;
+}
+.container main .main__contact_div {
+  background-color: #f5f5f5;
+  text-align: center;
+}
+.container main .main__contact_div h2 {
+  padding: 2rem;
+  padding: 2rem;
+}
+.container main .main__contact_div .contact_form {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.container main .main__contact_div .contact_form form {
+  width: 60%;
+}
+.container main .main__contact_div .contact_form .input_boxes {
+  background-color: #f5f5f5;
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+  margin: 1rem;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.container main .main__contact_div .contact_form .input_boxes:nth-child(6) {
+  margin-top: 5rem;
+}
+.container main .main__contact_div .contact_form button {
+  margin: 2rem;
+  padding: 0.5rem;
+  background-color: #393939;
+  color: #fffdff;
+  cursor: pointer;
+}
+.container main .main__contact_div .contact_form button:hover {
+  color: #61DAFB;
+  font-weight: 700;
+  cursor: pointer;
+}
+.container main .main__contact_div section {
+  background-color: #010101;
+  color: #fff;
+  height: 20vh;
+}
+.container main .main__contact_div section p {
+  padding-top: 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .container .header .header__name_nav, .container .header .header__hamberg {
+    display: none;
+  }
+  .container .header .show_hamberg {
+    display: block;
+  }
+}
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+  .container main .main__about_me {
+    text-align: center;
+    flex-direction: column-reverse;
+  }
+  .container main .main__about_me .about_me__image {
+    width: 100%;
+  }
+  .container main .main__about_me .about_me__image img {
+    padding: 1rem;
+    height: 40vh;
+  }
+  .container main .main__about_me .about_me__description {
+    margin-left: 0px;
+  }
+  .container main .main__personal_details_container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .container main .main__personal_details_container .personal_details {
+    width: 100%;
+    padding: 0;
+    margin-top: 2rem;
+  }
+  .container main .main__personal_details_container .personal_details::after {
+    display: none;
+  }
+  .container main .portfolio_container .portfolio .image_gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+  .container main .portfolio_container .portfolio .image_gallery .ecommerce_backside {
+    height: 40%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 70%;
+  }
+  .container main .portfolio_container .portfolio .image_gallery {
+    grid-template-columns: 1fr;
+  }
+  .container main .project_sections_div .project_section {
+    grid-template-columns: 1fr;
+  }
+  .container main .main__testimonials_container .main__testimonials {
+    grid-template-columns: 1fr;
+  }
+  .container main .main__testimonials_container .main__testimonials .testimonials img {
+    height: 12rem;
+  }
+}/*# sourceMappingURL=style.css.map */

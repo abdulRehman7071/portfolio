@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style/style.css" />
+  <script src="script/main.js" defer></script>
+  <title>x-Header</title>
+</head>
+
+<body>
+  <!-------------------------------------------------------------------- login drop down -->
+  <div class="login_pop_up">
+    <i class="fa-solid fa-xmark" id="login_close"></i>
+    <form>
+      <label for="Email">Login</label>
+      <input type="email">
+      <label for="Password">Password</label>
+      <input type="password">
+      <button>Log In </button>
+    </form>
+
+  </div>
+  <!----------------------------------------------------------------------- full container  -->
+  <div class="full_body">
+    <header>
+      <nav class="header_top">
+        <div class="logo">
+          <img src="assests/logo.png" alt="logo" id="main_logo" />
+        </div>
+        <div class="toggle_aside">
+          <i class="fa-solid fa-bars" id="bar1"></i>
+          <i class="fa-solid fa-xmark" id="bar2"></i>
+        </div>
+        <div class="header_right_component">
+          <input type="search" placeholder="Search" class="search_bar" /><i class="fa-solid fa-magnifying-glass"></i>
+          <li id="login_btn"><i class="fa-solid fa-lock"></i>Login</li>
+          <li><i class="fa-solid fa-envelope"></i>Contact</li>
+          <li><i class="fa-solid fa-user"></i>Register</li>
+          <div class="my_account">
+            <li>
+              <i class="fa-solid fa-user"></i>My Account<i class="fa-sharp fa-solid fa-caret-down"></i>
+            </li>
+            <!------------------------------------------------- About-drop -->
+            <div class="profile_logout">
+              <li>Profile</li>
+              <li>logout</li>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!---------------------------------------------------------------------------------------------- profile_logout -->
+
+      <div class="header_left_container">
+        <li><i class="fa-solid fa-house-chimney"></i>Home</li>
+        <!--------------------------------------------------- Service drop -->
+
+        <div id="service_drop_item">
+          <li>
+            <i class="fa-solid fa-bell-concierge"></i>
+
+            Services<i class="fa-sharp fa-solid fa-caret-down"></i>
+          </li>
+          <div class="service_drop">
+            <div class="service_drop_head">
+              <p>Our are of Expertise</p>
+            </div>
+            <div class="service_drop_body">
+              <div class="service_drop_body_ecom">
+                <p>Ecommerce</p>
+                <li>Web Development</li>
+                <li>Payment Integration</li>
+                <li>Shipment</li>
+                <li>B2B Portal Development</li>
+              </div>
+              <div class="service_drop_body_webinar">
+                <p>Webinar Solution 2</p>
+                <li>DIY Platform for webinars</li>
+                <li>DIY Platform for Online events</li>
+                <li>Integration with Youtube,Facebook and Zoom 3</li>
+              </div>
+              <div class="service_drop_body_web_solution">
+                <p>Web Solution</p>
+                <li>Web Application Development in PHP,Dot NET, Angular</li>
+                <li>
+                  Content Management System : Wordpress,Drupal,Umbraco,DotNetNuke
+                </li>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <li><i class="fa-solid fa-life-ring"></i>Projects</li>
+        <li><i class="fa-solid fa-building"></i>Clients</li>
+        <!-- <li>About</li> -->
+        <div id="about_drop_item">
+          <li>
+            <i class="fa-solid fa-user"></i>About
+            <i class="fa-sharp fa-solid fa-caret-down"></i>
+            </select>
+          </li>
+
+          <div class="drop_about">
+            <p>Company</p>
+            <p>Team</p>
+            <p>Career</p>
+          </div>
+        </div>
+      </div>
+      <aside class="container">
+
+        <div class="ham_content">
+          <ul>
+            <li><input type="search" placeholder="Search"> <i class="fa-solid fa-magnifying-glass"
+                id="search_aside"></i>
+            </li>
+            <hr>
+            <li><i class="fa-solid fa-lock"></i>Login</li>
+            <hr>
+            <li><i class="fa-solid fa-envelope"></i>Contact</li>
+            <hr>
+            <li><i class="fa-solid fa-user"></i>Register</li>
+            <hr>
+
+            <li><i class="fa-solid fa-user"></i>My Account
+              <span class="end"><i class="fa-sharp fa-solid fa-caret-down"></i></span>
+            </li>
+
+            <hr>
+            <li><i class="fa-solid fa-house"></i>Home</li>
+            <hr>
+            <li><i class="fa-solid fa-laptop"></i>Services
+              <span class="end"><i class="fa-sharp fa-solid fa-caret-down"></i></span>
+            </li>
+            <hr>
+            <li><i class="fa-solid fa-life-ring"></i>Projects</li>
+            <hr>
+            <li><i class="fa-solid fa-building"></i>Clients</li>
+            <hr>
+          </ul>
+        </div>
+      </aside>
+
+
+    </header>
+    <main>
+      <img src="assests/digital-transformation-concept-jigsaw-puzzle.jpg" alt="" id="#main_bg_img">
+    </main>
+
+</body>
+
+</html>

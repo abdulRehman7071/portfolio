@@ -1,0 +1,429 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+* {
+  font-family: inter;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container__aside {
+  background-color: #202020;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.container__aside .aside__profile__header {
+  height: 19%;
+  margin-top: 2rem;
+}
+.container__aside .aside__profile__header .profile__header__pic {
+  border: 2px solid #ffd801;
+  width: 85%;
+  display: flex;
+  border-left: none;
+  justify-content: center;
+}
+.container__aside .aside__profile__header .profile__header__pic img {
+  width: 55%;
+  border-radius: 50%;
+}
+.container__aside .aside_content {
+  margin: 1rem;
+}
+.container__aside .aside_content .aside_content__detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container__aside .aside_content .aside_content__contacts {
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+}
+.container__aside .aside_content .aside_content__contacts .small-yellow {
+  background-color: #ffd801;
+  color: #ffd801;
+  height: 0.5%;
+  width: 10%;
+  position: absolute;
+  left: 45%;
+}
+.container__aside .aside_content .aside_content__contacts .fa-solid {
+  color: #ffd801;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+.container__aside .aside_content .aside_content__contacts .flag_and_heading {
+  display: flex;
+  gap: 0.5rem;
+  left: 23%;
+}
+.container__aside .aside_content .aside_content__contacts .flag_and_heading .left-flag {
+  height: 32px;
+  right: 96%;
+  width: 16px;
+}
+.container__aside .aside_content .aside_content__contacts .flag_and_heading .right-flag {
+  height: 32px;
+  width: 16px;
+  left: 63%;
+}
+.container__aside .aside_content .aside_content__contacts .flag_and_heading .content__heading {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+.container__aside .aside_content .aside_content__contacts .flag_and_heading .aside__content__headings {
+  color: #ffd801;
+  font-size: 1.3rem;
+}
+.container__aside .aside_content .education {
+  text-align: center;
+  padding: 1rem;
+}
+.container__aside .aside_content .education .flag_and_heading {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  left: 20%;
+}
+.container__aside .aside_content .education .flag_and_heading .left-flag {
+  height: 32px;
+  right: 96%;
+  width: 16px;
+}
+.container__aside .aside_content .education .flag_and_heading .right-flag {
+  height: 32px;
+  width: 16px;
+  left: 69%;
+}
+.container__aside .aside_content .education .flag_and_heading .content__heading {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+.container__aside .aside_content .education .flag_and_heading .aside__content__headings {
+  color: #ffd801;
+  font-size: 1.3rem;
+}
+.container__aside .aside_content .education .education {
+  padding: 1rem;
+  font-size: 1rem;
+}
+.container__aside .aside_content .aside__skills {
+  position: relative;
+  text-align: center;
+  padding: 1rem;
+}
+.container__aside .aside_content .aside__skills .flag_and_heading {
+  display: flex;
+  left: 15%;
+  gap: 0.5rem;
+}
+.container__aside .aside_content .aside__skills .flag_and_heading .left-flag {
+  height: 32px;
+  right: 96%;
+  width: 19px;
+}
+.container__aside .aside_content .aside__skills .flag_and_heading .right-flag {
+  height: 32px;
+  width: 18px;
+  left: 73%;
+}
+.container__aside .aside_content .aside__skills .flag_and_heading .content__heading {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  width: 70%;
+}
+.container__aside .aside_content .aside__skills .flag_and_heading .aside__content__headings {
+  color: rgb(255, 255, 255);
+  font-size: 1.3rem;
+}
+.container__aside .aside_content .aside__skills .skill__chart {
+  margin-top: 10%;
+}
+.container__aside .aside_content .aside__skills .skill__chart .skills__section {
+  padding: 12px;
+  background-color: #ffd801;
+  color: #202020;
+  margin-top: 5%;
+  width: 10rem;
+  font-size: 0.7rem;
+  text-align: initial;
+}
+.container__aside .aside_content .aside__skills .skill__chart .skills__section::after {
+  content: "-----------------------";
+  margin-left: 1rem;
+  height: 0.3rem;
+  width: 57%;
+  background-color: #202020;
+  color: #202020;
+}
+.container__aside .aside_content .aside__skills .skill__chart #skill2::after {
+  content: "----------------------";
+  margin-left: 19%;
+  top: 50.5%;
+  width: 52%;
+  color: #202020;
+}
+.container__aside .aside_content .aside__skills .skill__chart #skill3::after {
+  content: "---------------------";
+  margin-left: 24%;
+  top: 68.5%;
+  width: 47%;
+  color: #202020;
+}
+.container__aside .aside_content .aside__skills .skill__chart #skill4::after {
+  content: "------------------";
+  margin-left: 18%;
+  top: 85.5%;
+  width: 45%;
+  color: #202020;
+}
+
+.font1 {
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+}
+
+.font2 {
+  font-size: 1rem;
+}
+
+.font2-white {
+  font-size: 1.3rem;
+  color: white;
+}
+
+.font3-white {
+  font-size: 1rem;
+  color: white;
+}
+
+.font3 {
+  color: white;
+}
+
+.font4 {
+  font-size: 0.8rem;
+  color: #b3b3b3;
+}
+
+.blackfont {
+  color: #202020;
+}
+
+.greyfont {
+  color: #b3b3b3;
+}
+
+.right-fonts {
+  font-size: 2.2rem;
+}
+
+.under_line {
+  border-bottom: 0.5px solid #202020;
+}
+
+body .container {
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  max-width: 60vw;
+  margin: auto;
+}
+body .container .container__main {
+  display: flex;
+  flex-direction: column;
+}
+body .container .container__main .main__header {
+  min-height: 19%;
+  position: relative;
+}
+body .container .container__main .main__header .main__header__sec-1 {
+  position: absolute;
+  top: 0px;
+  width: 20%;
+  background-color: #202020;
+  height: 100%;
+  position: absolute;
+  color: rgb(0, 0, 0);
+}
+body .container .container__main .main__header .main__header__sec-2 {
+  background-color: #ffd801;
+  margin-bottom: 1.2rem;
+  width: 87%;
+  position: absolute;
+  top: 17%;
+  left: 10%;
+  height: 64%;
+}
+body .container .container__main .main__header .main__header__sec-2 .header__title {
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  margin-left: 1rem;
+  letter-spacing: 0.2rem;
+}
+body .container .container__main .main__header .main__header__sec-2 .header__postition {
+  margin-left: 1rem;
+  font-size: 0.9rem;
+}
+body .container .container__main .main__content {
+  display: flex;
+  flex-direction: column;
+  border-left: 1rem solid #ffd801;
+  height: 81%;
+}
+body .container .container__main .main__content .main__content__profile, body .container .container__main .main__content .main_workExp_section {
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+body .container .container__main .main__content .main__content__profile #about, body .container .container__main .main__content .main_workExp_section #about {
+  margin-top: 0.5rem;
+  letter-spacing: 0.5px;
+}
+body .container .container__main .main__content .main__content__profile .font2, body .container .container__main .main__content .main_workExp_section .font2 {
+  font-size: 0.9rem;
+}
+body .container .container__main .main__content .main__content__profile .profile__description, body .container .container__main .main__content .main_workExp_section .profile__description {
+  border-top: 1px solid #202020;
+}
+body .container .container__main .main__content .main__workExp__heading {
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+body .container .container__main .main__content .main_workExp_section {
+  border-top: 1px solid #202020;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 100%;
+  margin-top: 1rem;
+}
+body .container .container__main .main__content .main_workExp_section .workExp_section__box {
+  display: flex;
+}
+body .container .container__main .main__content .main_workExp_section .workExp_section__box #shape1 {
+  margin-top: 1rem;
+}
+body .container .container__main .main__content .main_workExp_section .workExp_section__box .workExp_shapes {
+  border-right: 1px solid #202020;
+  width: 20%;
+  font-size: 0.5rem;
+  position: relative;
+}
+body .container .container__main .main__content .main_workExp_section .workExp_section__box .workExp_shapes section {
+  margin-top: 1rem;
+}
+body .container .container__main .main__content .main_workExp_section .workExp_section__box .workExp_shapes .shape {
+  text-align: center;
+  color: white;
+  width: 58%;
+  position: relative;
+  background-color: #202020;
+}
+body .container .container__main .main__content .main_workExp_section .workExp_section__box .workExp_shapes .shape::before {
+  content: "";
+  position: absolute;
+  left: 100%;
+  border-top: 1rem solid transparent;
+  border-bottom: 1.15rem solid transparent;
+  border-left: 1rem solid #202020;
+}
+body .container .container__main .main__content .main_workExp_section .workExp_section__box .workExp_shapes .shape::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  left: 165%;
+  bottom: 25%;
+  background-color: #202020;
+}
+body .container .container__main .main__content .main_workExp_section .workExp_section__box .workExp_shapes .shape p {
+  font-size: 0.8rem;
+}
+body .container .container__main .main__content .main_workExp_section .workExp_section__box .exp, body .container .container__main .main__content .main_workExp_section .workExp_section__box .workExp1 {
+  width: 80%;
+  margin-top: 1.6rem;
+}
+body .container .container__main .main__content .main_workExp_section .workExp_section__box .exp #CA, body .container .container__main .main__content .main_workExp_section .workExp_section__box .workExp1 #CA {
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+}
+body .container .container__main .main__content .main_workExp_section .workExp_section__box .exp #e-cell, body .container .container__main .main__content .main_workExp_section .workExp_section__box .workExp1 #e-cell {
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+}
+body .container .container__main .main__content .main_workExp_section .workExp_section__box .exp #CS, body .container .container__main .main__content .main_workExp_section .workExp_section__box .workExp1 #CS {
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+}
+body .container .container__main .main__content .main_workExp_section .workExp_section__box .exp p, body .container .container__main .main__content .main_workExp_section .workExp_section__box .workExp1 p {
+  margin-left: 2rem;
+}
+body .container .container__main .main__content .main_workExp_section .workExp_section__box .workExp1 {
+  margin-top: 2.5rem;
+}
+
+@media screen and (max-width: 1010px) {
+  body .container {
+    grid-template-columns: 1fr;
+  }
+  body .container .container__main .main__header {
+    min-height: 25%;
+  }
+  body .container .container__main .main__header .main__header__sec-2 {
+    width: 85%;
+    top: 3%;
+    left: 10%;
+    height: 90%;
+  }
+  body .container .container__aside {
+    margin-top: 30%;
+  }
+  body .container .container__aside .aside__profile__header .profile__header__pic {
+    width: 93%;
+    margin: 1rem;
+    border-left: 2px solid #ffd801;
+  }
+  body .container .container__aside .aside__profile__header .profile__header__pic img {
+    width: 30%;
+  }
+  body .container .container__aside .aside_content__contacts {
+    margin-top: 10%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 90%;
+  }
+  body .container {
+    max-width: 100%;
+    margin: auto;
+  }
+  body .container .container__main .main__header {
+    height: 20vh;
+  }
+}
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 90%;
+  }
+  html body .container .container__main .main__header {
+    height: 20vh;
+  }
+  html body .container .container__aside .aside__profile__header .profile__header__pic {
+    width: 90%;
+    border-left: 2px solid #ffd801;
+  }
+}
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 80%;
+  }
+  html body {
+    background-color: rgb(255, 255, 255);
+  }
+  html body .container .container__main .main__header {
+    height: 20vh;
+  }
+}/*# sourceMappingURL=style.css.map */

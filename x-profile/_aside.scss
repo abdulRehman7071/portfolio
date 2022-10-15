@@ -1,0 +1,193 @@
+.container__aside {
+    background-color: #202020;
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+    .aside__profile__header {
+        height: 19%;
+        margin-top: 2rem;
+
+        .profile__header__pic {
+            border: 2px solid #ffd801;
+            width: 85%;
+            display: flex;
+            border-left: none;
+            justify-content: center;
+            img {
+                width: 55%;
+                border-radius: 50%;
+            }
+        }
+    }
+    .aside_content {
+        margin: 1rem;
+        .aside_content__detail {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .aside_content__contacts {
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            .small-yellow {
+                background-color: #ffd801;
+                color: #ffd801;
+                height: 0.5%;
+                width: 10%;
+                position: absolute;
+                left: 45%;
+                // top: 1%;
+            }
+
+            .fa-solid {
+                color: #ffd801;
+                font-size: 1.5rem;
+                padding: 0.5rem;
+            }
+            .flag_and_heading {
+                display: flex;
+             
+                gap: 0.5rem;
+                left: 23%;
+
+                .left-flag {
+                    height: 32px;
+
+                    right: 96%;
+                    width: 16px;
+                }
+                .right-flag {
+                    height: 32px;
+                    width: 16px;
+
+                    left: 63%;
+                }
+                .content__heading {
+                    border-top: 1px solid white;
+                    border-bottom: 1px solid white;
+                }
+
+                .aside__content__headings {
+                    color: #ffd801;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+        .education {
+            text-align: center;
+            padding: 1rem;
+            .flag_and_heading {
+                display: flex;
+                justify-content: center;
+                gap: 0.5rem;
+                left: 20%;
+
+                .left-flag {
+                    height: 32px;
+
+                    right: 96%;
+                    width: 16px;
+                }
+                .right-flag {
+                    height: 32px;
+                    width: 16px;
+
+                    left: 69%;
+                }
+                .content__heading {
+                    border-top: 1px solid white;
+                    border-bottom: 1px solid white;
+                }
+
+                .aside__content__headings {
+                    color: #ffd801;
+                    font-size: 1.3rem;
+                }
+            }
+
+            .education{
+                padding: 1rem;
+                font-size: 1rem;
+            }
+        }
+        .aside__skills {
+            position: relative;
+            text-align: center;
+            padding: 1rem;
+
+            .flag_and_heading {
+                display: flex;
+                left: 15%;
+                gap: 0.5rem;
+
+                .left-flag {
+                    height: 32px;
+                    right: 96%;
+                    width: 19px;
+                }
+                .right-flag {
+                    height: 32px;
+                    width: 18px;
+                    left: 73%;
+                }
+                .content__heading {
+                    border-top: 1px solid white;
+                    border-bottom: 1px solid white;
+                    width: 70%;
+                }
+
+                .aside__content__headings {
+                    color: rgb(255, 255, 255);
+                    font-size: 1.3rem;
+                }
+            }
+            .skill__chart {
+                margin-top: 10%;
+                .skills__section {
+                    padding: 12px;
+                    background-color: #ffd801;
+                    color: #202020;
+                    margin-top: 5%;
+                    width: 10rem;
+                    font-size: 0.7rem;
+                    text-align: initial;
+
+                    &::after {
+                        content: "-----------------------";
+                        margin-left: 1rem;
+                        height: 0.3rem;
+                        width: 57%;
+                        background-color: #202020;
+                        color: #202020;
+                    }
+                }
+
+                #skill1 {
+                }
+                #skill2::after {
+                    content: "----------------------";
+                    margin-left: 19%;
+                    top: 50.5%;
+                    width: 52%;
+                    color: #202020;
+                }
+                #skill3::after {
+                    content: "---------------------";
+                    margin-left: 24%;
+                    top: 68.5%;
+                    width: 47%;
+                    color: #202020;
+                }
+                #skill4::after {
+                    content: "------------------";
+                    margin-left: 18%;
+                    top: 85.5%;
+                    width: 45%;
+                    color: #202020;
+                }
+            }
+        }
+    }
+}
