@@ -1,0 +1,20 @@
+$light_blue : #61DAFB;
+$black_shade : #000000;
+$white_color : #ffffff;
+$grey_color : #f5f5f5;
+$padding_2rem: 2rem;
+:root {
+    --primary-background: #fff;
+    --secondary-background: #3c4761;
+    --secondary-background-fallback: rgba(63, 71, 97, 0.9);
+    --primary-color: #3c4761;
+    --secondary-color: #fff;
+    --grey: #f9f9f9;
+    --grey-dark: #ddd;
+}
+
+.bold{
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin: 0.5rem;
+}

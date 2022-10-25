@@ -1,0 +1,295 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+@import "mixin";
+html {
+    background-color: $bgColor;
+}
+.edit_button {
+    width: 100px;
+    height: 35px;
+    position: relative;
+    left: 164px;
+    border-radius: 10px;
+}
+main {
+    background-color: rgb(246, 249, 255);
+    @include flex-col;
+    @import "header";
+    .container {
+        display: flex;
+        flex-direction: column;
+
+        @import "left-container";
+        @import "right-section";
+    }
+}
+
+.text_box {
+    height: 10%;
+    margin: 2rem;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    color: $primaryColor;
+    input {
+        background-color: $bgColor;
+        border: 1px solid $secondryColor;
+        padding: 0.3rem;
+        color: $primaryColor_2;
+    }
+}
+
+.btn {
+    height: 2rem;
+    width: 2rem;
+    color: white;
+}
+
+.red {
+    background-color: $primaryColor_2;
+}
+.green {
+    background-color: $secondryColor;
+}
+.grey {
+    background-color: darkgray;
+    color: $primaryColor_2;
+}
+.blue {
+    background-color: rgb(81, 125, 255);
+    color: $primaryColor_2;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.fa-solid {
+    background-color: transparent;
+}
+
+.input_values {
+    width: 100%;
+}
+
+//----------------------------------- pop-up
+.edit_form_elements {
+    .edit_popup {
+        border-radius: 4px;
+        top: 0;
+        width: 35%;
+        background-color: $bgColor;
+        position: absolute;
+        z-index: 3;
+        margin-top: 10%;
+        margin-left: 35%;
+        display: none;
+        border: 2px solid rgb(255, 255, 255);
+
+        .popup_h1 {
+            background-color:  $secondryColor;
+            height: 60px;
+        }
+
+        .p_popup {
+            background-color: $bgColor;
+            color: $primaryColor_2;
+            margin-top: 2%;
+            margin-left: 3%;
+        }
+
+        .input_popup {
+            background-color: $secondryColor;
+            color: black;
+            width: 90%;
+            height: 30px;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            margin-left: 3%;
+            border-radius: 5px;
+            border-color: grey;
+        }
+
+        .Checkbox {
+            display: flex;
+        }
+
+        .btn_popup_s {
+            width: 100px;
+            // width: 90%;
+            height: 40px;
+            background-color: $secondryColor;
+            border: 0;
+            border-radius: 3px;
+            margin-top: 2%;
+            margin-bottom: 2%;
+          margin-left: 20%;
+            cursor: pointer;
+        }
+
+        .btn_popup_c {
+            @extend .btn_popup_s;
+            background-color: $primaryColor;
+            width: 100px;
+            margin-left: 20%;
+        }
+    }
+
+    .edit_form_content {
+        margin: 5px;
+        padding: 5px;
+        height: 18%;
+        font-size: 1rem;
+
+        p {
+            width: 551px;
+            height: 2rem;
+        }
+
+        input {
+            width: 33rem;
+            height: 1.5rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+
+        #edit_chk_box {
+            margin: 1rem;
+            font-size: 1.5rem;
+            width: 40%;
+            position: relative;
+
+            right: 76px;
+        }
+        // select{
+        //
+        // } working on ws
+    }
+}
+
+.fa-regular,
+.far {
+    font-weight: 500;
+    position: relative;
+    top: 33px;
+    left: 77px;
+    font-size: 21px;
+}
+
+.fa-solid {
+    font-weight: 500;
+    position: relative;
+    top: 33px;
+    left: 77px;
+    font-size: 21px;
+}
+
+#pop_up_select {
+    width: 98%;
+    height: 2rem;
+    border-radius: 10px;
+}
+
+#pop_up_check {
+    margin: 1rem;
+}
+
+.check_close_btn {
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    position: relative;
+
+    left: 88px;
+    margin: 1rem;
+}
+
+// .btn1{
+//     margin: 0.5rem;
+// }
+.fa-xmark {
+    position: relative;
+    top: 0%;
+    left: 0%;
+}
+.pen {
+    position: relative;
+    top: 0%;
+    left: 0%;
+}
+#edit_element {
+    margin: 0.5rem;
+}
+.logos {
+    color: $primaryColor_2;
+}
+@media screen and (max-width: 700px) {
+    html {
+        font-size: 80%;
+    }
+
+    body {
+        main {
+            .container {
+                .form_heading_buttons {
+                    .preview_submit_cancel_btn {
+                        button {
+                            height: 3rem;
+                            width: 5rem;
+                        }
+                    }
+                }
+                .dragging_item_div {
+                    .inputs {
+                        flex-wrap: wrap;
+                    }
+                }
+                .right-container {
+                    flex-direction: column;
+                    .form_inputs {
+                        height: 50vh;
+                        width: 100%;
+                    }
+                    .images_section {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .edit_form_elements {
+        .edit_popup {
+            border-radius: 4px;
+            top: 100%;
+            width: 75%;
+            background-color: black;
+            position: absolute;
+            z-index: 3;
+            margin-top: 15%;
+            margin-left: 13%;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    html {
+        font-size: 60%;
+    }
+    body {
+        main {
+            .container {
+                .form_heading_buttons {
+                    .preview_submit_cancel_btn {
+                        button {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+@mixin flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin center {
+
+    display: flex;
+    justify-content: center;
+   
+
+}
+@mixin button {
+    padding: 1rem;
+    
+}
+$bgColor: black;
+$primaryColor :#DF058D;
+$primaryColor_2 :#ff6b2b;
+$secondryColor:#66d9ed;
+
