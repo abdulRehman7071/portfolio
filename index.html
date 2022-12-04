@@ -24,9 +24,6 @@
       <div class="load_boxes">
         <h3>Front End Developer</h3>
       </div>
-      <div class="load_boxes">
-        <h3>Nice to see you...</h3>
-      </div>
       <div class="load_boxes logo_anim2">
         <img src="assets/logo_abdul_rehman.png" alt="" />
       </div>
@@ -50,8 +47,11 @@
 
       <div class="header__name_nav">
         <section class="header__name">
-          <h3>Front End Developer</h3>
+          <a href="https://portfolio-react-abdul.netlify.app/" target="_blank">
+
+            <h3>Front End Developer</h3>
         </section>
+        </a>
         <nav class="header__nav_links">
           <ul>
             <a href="#container">
@@ -92,9 +92,7 @@
     <main>
       <div class="main__banner__name_social_handles">
         <section class="banner__name">
-          <h1>
-            I am <span class="banner__name__span"> Khan Abdul Rehman </span>
-          </h1>
+          <h1 class="animation">Khan Abdul Rehman</h1>
         </section>
         <section class="banner__social_handles">
           <ul>
@@ -166,12 +164,30 @@
           <h4>Front End Projects</h4>
         </div>
         <div class="project_section">
+
+          <a href="https://ecommerce-react-abdul.netlify.app/" target="_blank">
+            <div class="project">
+              <img src="assets/ecom_logo.png" alt="Ecommerce Project" />
+              <div class="project_details">
+                <h4>E-commerce Page</h4>
+                <h6>React.JS</h6>
+                <p>
+                  Products Listing page separated by categories.
+                  Filter by Category and Brand,Sort by Price, Rating and Discount.
+                  Add to cart functionality
+                </p>
+              </div>
+            </div>
+          </a>
+
+
           <a href="x-form-builder/index1.html" target="_blank">
             <!-- <div class="view_project_button button_link">Form Builder</div> -->
             <div class="project">
               <img src="assets/form_builder2.png" alt="Form Builder" />
               <div class="project_details">
                 <h4>Form Builder</h4>
+                <h6>Vanilla Javascript</h6>
                 <p>
                   A form builder which allows you to Upload Logo, Banner, Input fields. User can save form and also
                   access the
@@ -180,37 +196,12 @@
             </div>
           </a>
 
-          <a href="x-form/index.html" target="_blank">
-            <div class="project">
-              <img src="assets/forms.png" alt="Landing Page" />
-              <div class="project_details">
-                <h4>Landing Page</h4>
-                <p>
-                  Built Sign up, Sign in, Forget Password and Save Profile Pages.
-                  Added Validation to all the pages Using JavaScript.
-                </p>
-              </div>
-            </div>
-          </a>
-
-          <a href="x-profile/index.html" target="_blank">
-            <div class="project">
-              <img src="assets/cv.jpeg" alt="Resume" />
-              <div class="project_details">
-                <h4>Website Resume</h4>
-                <p>
-                  Built my own website showcasing my frontend skills, my Educational, skills,and personal information.
-                </p>
-              </div>
-            </div>
-            <!-- <div class="view_project_button button_link">Resume</div> -->
-          </a>
-
           <a href="https://abdul-netflix-clone.netlify.app/" target="_blank">
             <div class="project">
               <img src="assets/netflix_logo.png" alt="Netflix Logo" />
               <div class="project_details">
                 <h4>Netflix Clone Using React Js</h4>
+                <h6>React.JS</h6>
                 <p>
                   Using React Js Components,Props, useState, useEffect built the Frontend Clone of Netflix.
                 </p>
@@ -223,6 +214,7 @@
               <img src="assets/tesla_logo.jpg" alt="Tesla logo" / id="tesla_img">
               <div class="project_details">
                 <h4>Tesla Product Page</h4>
+                <h6>Vanilla Javascript</h6>
                 <p>
                   Using Basic HTML, CSS, JavaScript Built the product page of Tesla, revealing the feature of its car
                   called Roadster.
@@ -231,12 +223,46 @@
             </div>
           </a>
 
+          <a href="x-form/index.html" target="_blank">
+            <div class="project">
+              <img src="assets/forms.png" alt="Landing Page" />
+              <div class="project_details">
+                <h4>Landing Page</h4>
+                <h6>Vanilla Javascript</h6>
+                <p>
+                  Built Sign up, Sign in, Forget Password and Save Profile Pages.
+                  Added Validation to all the pages Using JavaScript.
+                </p>
+              </div>
+            </div>
+          </a>
+
+
+
+          <!-- <a href="x-profile/index.html" target="_blank">
+            <div class="project">
+              <img src="assets/cv.jpeg" alt="Resume" />
+              <div class="project_details">
+                <h4>Website Resume</h4>
+                <p>
+                  Built my own website showcasing my frontend skills, my Educational, skills,and personal information.
+                </p>
+              </div>
+            </div>
+            <!-- <div class="view_project_button button_link">Resume</div> -->
+          <!-- </a> -->
+
+
+
+
+
           <a href="calculator/index.html" target="_blank">
             <!-- <div class="view_project_button button_link">Calculator</div> -->
             <div class="project">
               <img src="assets/calculator.jpeg" alt="Calculator" />
               <div class="project_details">
                 <h4>Calculator</h4>
+                <h6>Vanilla Javascript</h6>
                 <p>
                   Started my Frontend Journey with Building the Calculator which allows user to do Math calculations.
                 </p>
@@ -256,8 +282,9 @@
           <p class="bold">Place your Mouse on Images to see the Magic</p>
           <div class="portfolio_buttons">
             <div class="protfolio_btn" id="show_all_btn">Show all</div>
-            <div class="protfolio_btn" id="ecom_btn">Mouse Effets</div>
             <div class="protfolio_btn" id="apps_btn">Hover</div>
+            <div class="protfolio_btn" id="ecom_btn">Mouse Effets</div>
+
           </div>
 
           <div class="image_gallery">
@@ -404,7 +431,7 @@
         <h2>Get In touch</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
         <div class="contact_form">
-          <form action="submit">
+          <form>
             <label for="name">Your name</label>
             <input type="text" name="name" class="input_boxes" />
             <label for="email">Your Email</label>

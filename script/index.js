@@ -7,7 +7,39 @@ let loader = document.querySelector('#loader')
 setTimeout(() => {
     document.querySelector("body").style.overflow = "visible";
     loader.style.display = "none";
-}, 7450);
+}, 6000);
+
+
+
+// Name Animation 
+
+let name_h1 = document.querySelector('.animation')
+let name = name_h1.textContent
+let split_name = name.split('')
+name_h1.innerHTML = ''
+name.innerHTML = ''
+for (let i = 0; i < split_name.length; i++) {
+    name_h1.innerHTML += '<span class= "animation_span">' + split_name[i] + '</span>'
+}
+let char = 0;
+
+// setTimeout(() => {
+let timer = setInterval(() => {
+    let span = document.querySelectorAll('.animation_span')[char];
+    span.classList.add('fade_span');
+    char++;
+    if (char === split_name.length) {
+        clearInterval(timer)
+        timer = null;
+    }
+}, 50)
+
+
+
+
+function onTick() {
+
+}
 
 // Hamberger
 let show_ham = document.querySelector("#show_ham");
@@ -64,7 +96,7 @@ window.onscroll = (event) => {
         // console.log(scroll)
         skill.forEach((elem) => {
             // console.log(e)
-            elem.style.visibility="visible";
+            elem.style.visibility = "visible";
             elem.classList.add("skill_number");
             // elem.setAttribute('id', 'skill_slide');
         });

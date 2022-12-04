@@ -14,7 +14,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: #fff;
-  animation: anim2 1s cubic-bezier(0.19, 1, 0.22, 1) 7s both;
+  animation: anim2 1s cubic-bezier(0.19, 1, 0.22, 1) 5s both;
 }
 
 #wrapperload {
@@ -45,12 +45,20 @@ body {
 .load_boxes:nth-child(2) {
   animation: anim 2s cubic-bezier(0.19, 1, 0.22, 1) 3s both;
 }
-.load_boxes:nth-child(3) {
-  animation: anim 2s cubic-bezier(0.19, 1, 0.22, 1) 5s both;
-}
 
 .logo_anim2 {
-  animation: anim 2s cubic-bezier(0.19, 1, 0.22, 1) 7s both;
+  animation: anim 2s cubic-bezier(0.19, 1, 0.22, 1) 5s both;
+}
+// name Animation
+
+.animation_span {
+  transition: all 0.4s ease 6s;
+  color: rgb(177, 177, 177);
+  opacity: 0;
+}
+.fade_span {
+  color: rgb(255, 255, 255);
+  opacity: 1;
 }
 
 @keyframes anim {
