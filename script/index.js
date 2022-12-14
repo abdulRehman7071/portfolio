@@ -106,4 +106,12 @@ window.onscroll = (event) => {
         skill4.style.setProperty("--afterdisplay", "block");
         bookmark.style.setProperty("--afterdisplay", "flex");
     }
+    // if (scroll < 500) {
+    //     skill.forEach((elem) => {
+    //         // console.log(e)
+    //         elem.style.visibility = "hidden";
+    //         // elem.classList.add("skill_number");
+    //         // elem.setAttribute('id', 'skill_slide');
+    //     });
+    // }
 };
