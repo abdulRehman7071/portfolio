@@ -36,11 +36,6 @@ let timer = setInterval(() => {
 
 
 
-
-function onTick() {
-
-}
-
 // Hamberger
 let show_ham = document.querySelector("#show_ham");
 let close_ham = document.querySelector("#close_ham");
@@ -106,7 +101,9 @@ window.onscroll = (event) => {
         skill4.style.setProperty("--afterdisplay", "block");
         bookmark.style.setProperty("--afterdisplay", "flex");
     }
-    // if (scroll < 500) {
+    if (scroll < 500) {
+        bookmark.style.setProperty("--afterdisplay", "none");
+    }
     //     skill.forEach((elem) => {
     //         // console.log(e)
     //         elem.style.visibility = "hidden";

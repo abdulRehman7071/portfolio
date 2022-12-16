@@ -8,7 +8,6 @@
 
 @import "variables.scss";
 @import "loader.scss";
-@import "thank.scss";
 
 @mixin hover_effect {
   color: $white_color;
@@ -51,7 +50,6 @@ a {
             &:hover {
               @include hover_effect;
             }
-            // display:inline;
           }
         }
       }
@@ -110,6 +108,7 @@ a {
     }
     .main__banner__name_social_handles {
       color: $white_color;
+      background-color: black;
       background: url(../assets/bg1banner.png) no-repeat;
       background-size: cover;
       height: 100vh;
@@ -222,16 +221,23 @@ a {
           }
 
           .ecommerce_backside {
-            text-align: center;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             position: absolute;
             width: 100%;
             height: 100%;
-            background-color: #3c4761;
-            color: #fff;
+            background-color: whitesmoke;
+            border-radius: 0.5rem;
+            color: black;
+            border: 1px solid black;
             transition: transform 0.5s;
             visibility: hidden;
-            p:nth-child(1) {
-              margin-top: 25%;
+            p {
+              // margin-bottom: 0.5rem;
+
+              padding: 1rem;
             }
           }
 
@@ -315,7 +321,8 @@ a {
 
           .item_dropdown {
             position: absolute;
-            background-color: var(--secondary-background);
+            background-color: whitesmoke;
+
             top: 0;
             height: 0%;
             width: 100%;
@@ -325,11 +332,23 @@ a {
             justify-content: center;
             align-items: center;
             transition: 1s ease-in-out;
-            color: #fff;
+            p {
+              background-color: black;
+              padding: 0.5rem;
+              color: white;
+              border-radius: 0.5rem;
+              border: 1px solid black;
+              box-shadow: 2px 5px 4px #888888;
+            }
+            p:hover {
+              background-color: white;
+              color: black;
+              border: 1px solid white;
+            }
           }
 
           .item6:hover #drop {
-            height: 98%;
+            height: 99%;
           }
 
           .items_button {
@@ -747,10 +766,9 @@ a {
   .container {
     .main__about_me {
       display: flex;
+      flex-direction: column;
       gap: 0.5rem;
       .about_me__image {
-        flex-direction: column;
-
         img {
         }
       }
