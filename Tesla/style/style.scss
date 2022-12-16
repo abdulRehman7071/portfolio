@@ -6,11 +6,10 @@
     font-family: "Gotham", sans-serif;
     // background-color: black;
 }
-a{
+a {
     text-decoration: none;
     color: white;
 }
-
 
 @import url("http://fonts.cdnfonts.com/css/gotham");
 .container {
@@ -75,9 +74,10 @@ a{
     .banner {
         // background-color: black;
         background: url("../assests/hero@2.avif");
-        width: 100%;
-        height: 100%;
+        // width: 100%;
+        // height: 100%;
         background-size: cover;
+        object-fit: cover;
         text-align: center;
 
         .banner_text {
@@ -254,6 +254,7 @@ a{
             display: flex;
             margin: auto;
             flex-direction: column;
+            text-align: center;
             .btn {
                 width: 10rem;
                 border-radius: 5px;
@@ -293,24 +294,24 @@ a{
                     width: 70%;
                     flex-direction: column;
                     display: none;
-                    justify-content:flex-start;
+                    justify-content: flex-start;
                     background-color: white;
                     color: black;
-                    .tesla_models{
+                    .tesla_models {
                         width: 100vw;
                         margin: 0;
-                        ul{
+                        ul {
                             flex-direction: column;
-                            li{
+                            li {
                                 padding: 1.5rem;
                             }
                         }
                     }
-                    .user_dashboard{
+                    .user_dashboard {
                         width: 100vw;
-                        ul{
+                        ul {
                             flex-direction: column;
-                            li{
+                            li {
                                 padding: 1.5rem;
                             }
                         }
@@ -329,7 +330,8 @@ a{
 
         .banner {
             .banner_text {
-                height: 60vh;
+                min-height: 100vh;
+
                 h1 {
                     padding-top: 15%;
                 }
@@ -349,10 +351,9 @@ a{
                 top: 9%;
                 left: 30%;
                 .specifications {
-                    span{
+                    span {
                         font-size: 2rem;
                     }
-               
                 }
                 .reserve {
                     margin-left: 1rem;

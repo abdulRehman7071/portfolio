@@ -67,9 +67,8 @@ a {
 }
 .container .banner {
   background: url("../assests/hero@2.avif");
-  width: 100%;
-  height: 100%;
   background-size: cover;
+  object-fit: cover;
   text-align: center;
 }
 .container .banner .banner_text h1 {
@@ -224,6 +223,7 @@ a {
   display: flex;
   margin: auto;
   flex-direction: column;
+  text-align: center;
 }
 .container footer .button_collection .btn {
   width: 10rem;
@@ -292,7 +292,7 @@ a {
     right: 4%;
   }
   .container .banner .banner_text {
-    height: 60vh;
+    min-height: 100vh;
   }
   .container .banner .banner_text h1 {
     padding-top: 15%;
