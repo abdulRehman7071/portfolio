@@ -295,7 +295,7 @@ a {
     right: 4%;
   }
   .container .banner {
-    background-image: url("/assests/hero_responsive2.jpg");
+    background-image: url("../assests/hero_responsive2.jpg");
   }
   .container .banner .banner_text {
     min-height: 66vh;
