@@ -93,6 +93,9 @@ a {
 .container .banner .banner_text .tesla_specification i {
   font-size: 2rem;
 }
+.container .banner .banner_text .tesla_specification .specifications_collection {
+  display: flex;
+}
 .container .banner .banner_text .tesla_specification .specifications {
   padding: 2rem;
 }
@@ -291,8 +294,11 @@ a {
     display: none;
     right: 4%;
   }
+  .container .banner {
+    background-image: url("/assests/hero_responsive2.jpg");
+  }
   .container .banner .banner_text {
-    min-height: 100vh;
+    min-height: 66vh;
   }
   .container .banner .banner_text h1 {
     padding-top: 15%;
@@ -305,20 +311,20 @@ a {
     left: -3%;
   }
   .container .banner .banner_text .tesla_specification {
-    flex-direction: column;
-    margin-bottom: 50%;
     position: absolute;
-    top: 9%;
-    left: 30%;
+    flex-direction: column;
+    top: 15%;
+    left: 0%;
+    width: 100%;
   }
   .container .banner .banner_text .tesla_specification .specifications {
-    color: black;
+    padding: 1rem;
   }
   .container .banner .banner_text .tesla_specification .specifications span {
     font-size: 2rem;
   }
   .container .banner .banner_text .tesla_specification .reserve {
-    margin-left: 1rem;
+    margin: 3rem;
   }
   .container .tesla_video_description .performance_section img {
     max-width: 100%;
