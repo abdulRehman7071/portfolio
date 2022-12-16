@@ -311,6 +311,9 @@ a {
     top: 9%;
     left: 30%;
   }
+  .container .banner .banner_text .tesla_specification .specifications {
+    color: black;
+  }
   .container .banner .banner_text .tesla_specification .specifications span {
     font-size: 2rem;
   }
