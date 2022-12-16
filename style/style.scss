@@ -14,11 +14,20 @@
   font-weight: 700;
   cursor: pointer;
 }
+@mixin hover_bg {
+  background-color: white;
+  color: black;
+}
 @mixin heading {
   padding: 2rem;
 }
 @mixin button {
   cursor: pointer;
+  border-radius: 0.7rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 2rem;
 }
 a {
   text-decoration: none;
@@ -100,12 +109,12 @@ a {
   }
 
   main {
-    .button_link {
-      @include button;
-      @include hover_effect;
-      border: 1px solid rgb(0, 0, 0);
-      background-color: #000;
-    }
+    // .button_link {
+    //   @include button;
+    //   @include hover_effect;
+    //   border: 1px solid rgb(0, 0, 0);
+    //   background-color: #000;
+    // }
     .main__banner__name_social_handles {
       color: $white_color;
       background-color: black;
@@ -351,16 +360,16 @@ a {
             height: 99%;
           }
 
-          .items_button {
-            width: 100%;
-            background-color: #000;
-            width: 90%;
-            margin-top: 0.5rem;
-            color: #fff;
-            padding: 0.5rem;
-            margin: 5%;
-            @include button;
-          }
+          // .items_button {
+          //   width: 100%;
+          //   background-color: #000;
+          //   width: 90%;
+          //   margin-top: 0.5rem;
+          //   color: #fff;
+          //   padding: 0.5rem;
+          //   margin: 5%;
+          //   @include button;
+          // }
 
           .item_title {
             font-size: 1.1rem;
@@ -653,19 +662,19 @@ a {
           }
           transition: 450ms;
 
-          .view_project_button {
-            padding: 0.5rem;
-            border-radius: 0.5rem;
-            color: $black_shade;
-            background-color: $white_color;
-            margin: 2rem;
-            @include button;
+          // .view_project_button {
+          //   padding: 0.5rem;
+          //   border-radius: 0.5rem;
+          //   color: $black_shade;
+          //   background-color: $white_color;
+          //   margin: 2rem;
+          //   @include button;
 
-            &:hover {
-              @include hover_effect;
-              background-color: $black_shade;
-            }
-          }
+          //   &:hover {
+          //     @include hover_effect;
+          //     background-color: $black_shade;
+          //   }
+          // }
         }
       }
     }
@@ -705,6 +714,8 @@ a {
 
         &:hover {
           @include hover_effect;
+          @include hover_bg;
+          background-color: $grey_color;
         }
       }
     }
@@ -746,6 +757,7 @@ a {
 
           &:hover {
             @include hover_effect;
+            @include hover_bg;
           }
         }
       }
