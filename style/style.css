@@ -674,6 +674,7 @@ a {
 }
 .container main .project_sections_div .project_section .project .project_details {
   color: #000;
+  font-size: 14px;
 }
 .container main .project_sections_div .project_section .project .project_details p {
   margin: 1rem;
