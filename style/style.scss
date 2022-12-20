@@ -117,8 +117,8 @@ a {
     // }
     .main__banner__name_social_handles {
       color: $white_color;
+      background: url("../assets/bg1banner.png") no-repeat;
       background-color: black;
-      background: url(../assets/bg1banner.png) no-repeat;
       background-size: cover;
       height: 100vh;
       display: flex;
