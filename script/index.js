@@ -1,8 +1,10 @@
-// Loader Animation
 window.onbeforeunload = function () {
+    console.log('Refreshing');
     window.scrollTo(0, 0);
     document.querySelector('.container').style.display = "none";
 }
+// Loader Animation
+
 let loader = document.querySelector('#loader')
 setTimeout(() => {
     document.querySelector("body").style.overflow = "visible";
