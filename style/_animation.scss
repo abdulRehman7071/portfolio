@@ -1,0 +1,32 @@
+// name Animation
+
+.animation_span {
+  transition: all 0.5s ease 0.3s;
+  color: rgb(177, 177, 177);
+  opacity: 0;
+}
+.fade_span {
+  color: rgb(255, 255, 255);
+  opacity: 1;
+}
+
+#bg {
+  width: 100%;
+  height: 100vh;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+  background-color: #fff;
+}
+
+.skill_number {
+  animation: slide_number 4s;
+}
+
+@keyframes slide_number {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 96%;
+  }
+}

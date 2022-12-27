@@ -5,13 +5,6 @@ window.onbeforeunload = function () {
 }
 // Loader Animation
 
-let loader = document.querySelector('#loader')
-setTimeout(() => {
-    document.querySelector("body").style.overflow = "visible";
-    loader.style.display = "none";
-}, 6000);
-
-
 
 // Name Animation 
 
