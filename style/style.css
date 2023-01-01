@@ -412,7 +412,7 @@ a {
   top: 20%;
   left: 0%;
   height: 0.5rem;
-  width: 90%;
+  width: 95%;
   background-color: #010101;
   display: var(--afterdisplay, none);
   animation: skill_1 4s;
@@ -422,7 +422,7 @@ a {
     width: 0%;
   }
   100% {
-    width: 90%;
+    width: 95%;
   }
 }
 .container main .main__about_me .about_me__description .description_skill_chart .skill_chart__skills #skill_2 {
@@ -443,7 +443,7 @@ a {
   top: 46%;
   left: 0%;
   height: 0.5rem;
-  width: 85%;
+  width: 90%;
   background-color: #000000;
   display: var(--afterdisplay, none);
   animation: skill_2 4s;
@@ -453,7 +453,7 @@ a {
     width: 0%;
   }
   100% {
-    width: 85%;
+    width: 90%;
   }
 }
 .container main .main__about_me .about_me__description .description_skill_chart .skill_chart__skills #skill_3 {
@@ -474,7 +474,7 @@ a {
   top: 69%;
   left: 0%;
   height: 0.5rem;
-  width: 80%;
+  width: 85%;
   background-color: #000000;
   display: var(--afterdisplay, none);
   animation: skill_3 4s;
@@ -484,7 +484,7 @@ a {
     width: 0%;
   }
   100% {
-    width: 80%;
+    width: 85%;
   }
 }
 .container main .main__about_me .about_me__description .description_skill_chart .skill_chart__skills #skill_4 {
@@ -505,7 +505,7 @@ a {
   top: 93%;
   left: 0%;
   height: 0.5rem;
-  width: 75%;
+  width: 80%;
   background-color: #000000;
   display: var(--afterdisplay, none);
   animation: skill_4 4s;
@@ -515,7 +515,7 @@ a {
     width: 0%;
   }
   100% {
-    width: 75%;
+    width: 80%;
   }
 }
 .container main .main__personal_details_container {

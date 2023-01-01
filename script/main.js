@@ -16,9 +16,9 @@ show_ecom.addEventListener("click", (e) => {
 
   e.target.style.backgroundColor = "black";
   e.target.style.color = "white";
-  show_all.style.backgroundColor= "transparent";
+  show_all.style.backgroundColor = "transparent";
   show_all.style.color = "black";
-  show_app.style.backgroundColor= "transparent";
+  show_app.style.backgroundColor = "transparent";
   show_app.style.color = "black";
 });
 
@@ -32,9 +32,9 @@ show_app.addEventListener("click", (e) => {
   });
   e.target.style.backgroundColor = "black";
   e.target.style.color = "white";
-  show_all.style.backgroundColor= "transparent";
+  show_all.style.backgroundColor = "transparent";
   show_all.style.color = "black";
-  show_ecom.style.backgroundColor= "transparent";
+  show_ecom.style.backgroundColor = "transparent";
   show_ecom.style.color = "black";
 });
 
@@ -48,9 +48,9 @@ show_all.addEventListener("click", (e) => {
   });
   e.target.style.backgroundColor = "black";
   e.target.style.color = "white";
-  show_app.style.backgroundColor= "transparent";
+  show_app.style.backgroundColor = "transparent";
   show_app.style.color = "black";
-  show_ecom.style.backgroundColor= "transparent";
+  show_ecom.style.backgroundColor = "transparent";
   show_ecom.style.color = "black";
 });
 
@@ -64,9 +64,7 @@ let sliding_img = document.getElementById("sliding_img");
 item_1.addEventListener("mousemove", (e) => {
   let width = e.offsetX;
 
-
   let x = width;
-  console.log(x);
 
   if ((x > 0) & (x < 347)) {
     sliding_img_div.style.clip = `rect(0px ${x}px 1000px 0px)`;

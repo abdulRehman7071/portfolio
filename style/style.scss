@@ -455,7 +455,7 @@ a {
               top: 20%;
               left: 0%;
               height: 0.5rem;
-              width: 90%;
+              width: 95%;
               background-color: #010101;
               display: var(--afterdisplay, none);
               animation: skill_1 4s;
@@ -466,7 +466,7 @@ a {
               }
 
               100% {
-                width: 90%;
+                width: 95%;
               }
             }
 
@@ -488,7 +488,7 @@ a {
               top: 46%;
               left: 0%;
               height: 0.5rem;
-              width: 85%;
+              width: 90%;
               background-color: $black_shade;
               display: var(--afterdisplay, none);
               animation: skill_2 4s;
@@ -500,7 +500,7 @@ a {
               }
 
               100% {
-                width: 85%;
+                width: 90%;
               }
             }
             #skill_3 {
@@ -523,7 +523,7 @@ a {
 
               left: 0%;
               height: 0.5rem;
-              width: 80%;
+              width: 85%;
               background-color: $black_shade;
               display: var(--afterdisplay, none);
               animation: skill_3 4s;
@@ -534,7 +534,7 @@ a {
               }
 
               100% {
-                width: 80%;
+                width: 85%;
               }
             }
             #skill_4 {
@@ -555,7 +555,7 @@ a {
               top: 93%;
               left: 0%;
               height: 0.5rem;
-              width: 75%;
+              width: 80%;
               background-color: $black_shade;
               display: var(--afterdisplay, none);
               animation: skill_4 4s;
@@ -566,7 +566,7 @@ a {
               }
 
               100% {
-                width: 75%;
+                width: 80%;
               }
             }
           }

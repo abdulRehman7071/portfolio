@@ -95,10 +95,55 @@ window.onscroll = (event) => {
         skill3.style.setProperty("--afterdisplay", "block");
         skill4.style.setProperty("--afterdisplay", "block");
         bookmark.style.setProperty("--afterdisplay", "flex");
+        clearInterval()
     }
     if (scroll < 500) {
         bookmark.style.setProperty("--afterdisplay", "none");
+        setTimeout(() => {
+            let counts1 = setInterval(updateHtml, 35);
+            let upto1 = 0;
+            function updateHtml() {
+
+                skill1.innerHTML = `${++upto1}%`;
+                if (upto1 === 95) {
+                    clearInterval(counts1);
+                    counts1 = null;
+                }
+            }
+            let counts2 = setInterval(updateCss, 35);
+            let upto2 = 0;
+            function updateCss() {
+
+                skill2.innerHTML = `${++upto2}%`;
+                if (upto2 === 90) {
+                    clearInterval(counts2);
+                }
+            }
+            let counts3 = setInterval(updateJs, 35);
+            let upto3 = 0;
+            function updateJs() {
+
+                skill3.innerHTML = `${++upto3}%`;
+                if (upto3 === 85) {
+                    clearInterval(counts3);
+                }
+            }
+            let counts4 = setInterval(updateReact, 35);
+            let upto4 = 0;
+            function updateReact() {
+
+                skill4.innerHTML = `${++upto4}%`;
+                if (upto2 === 80) {
+                    clearInterval(counts4);
+                }
+            }
+        }, 500)
     }
+
+
+
+
+
     //     skill.forEach((elem) => {
     //         // console.log(e)
     //         elem.style.visibility = "hidden";
