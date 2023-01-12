@@ -30,6 +30,9 @@ main header nav {
 main header nav a {
   padding: 1rem;
 }
+main .rounded {
+  border-radius: 0.4rem;
+}
 main .hidden {
   display: none;
 }
@@ -228,10 +231,14 @@ main .container .right-container .images_section .right-main-container .right-fo
   display: flex;
   background-color: black;
   justify-content: space-around;
+  align-items: center;
   padding: 1rem;
 }
 main .container .right-container .images_section .right-main-container .right-footer .footer-components {
   width: 30%;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
   border: 1px dashed #DF058D;
   height: 9rem;
 }

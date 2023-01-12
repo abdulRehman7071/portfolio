@@ -6,10 +6,10 @@
     .images_section {
         width: 70%;
         .right-top-container {
-           section{
-            color: $secondryColor;
-            text-align: center;
-           }
+            section {
+                color: $secondryColor;
+                text-align: center;
+            }
 
             // background-color: gainsboro;
 
@@ -21,7 +21,6 @@
 
                 display: flex;
                 justify-content: space-around;
-        
 
                 .right-top-logo {
                     width: 27%;
@@ -50,11 +49,11 @@
                 width: 100%;
 
                 .right-body-img {
-                    p{
+                    p {
                         margin: 1rem;
                     }
-                    input{
-                       margin-left: 10%;
+                    input {
+                        margin-left: 10%;
                     }
                     height: 20rem;
                     border: 1px dashed $primaryColor;
@@ -67,23 +66,23 @@
                         min-height: 50%;
                     }
                 }
-               
             }
             .right-footer {
                 display: flex;
                 background-color: $bgColor;
                 justify-content: space-around;
+                align-items: center;
                 padding: 1rem;
                 .footer-components {
                     width: 30%;
-    
+                    justify-content: space-around;
+                    align-items: center;
+                    display: flex;
                     border: 1px dashed $primaryColor;
                     height: 9rem;
                 }
             }
         }
-        
-        
     }
     .form_inputs {
         width: 30%;

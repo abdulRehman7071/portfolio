@@ -25,6 +25,7 @@
 
     .dragging_item_div__heading {
         // width: 100%;
+
         background-color: $bgColor;
         color: $primaryColor;
         p {
@@ -57,7 +58,6 @@
             width: 100%;
             background-color: rgb(255, 255, 255);
             position: relative;
-            
 
             .input-elements {
                 // height: 100%;
@@ -92,12 +92,12 @@
                 left: 73%;
                 top: 35%;
             }
-            .fa-circle-dot{
+            .fa-circle-dot {
                 position: absolute;
                 left: 23%;
                 top: 35%;
             }
-            .fa-square-check{
+            .fa-square-check {
                 position: absolute;
                 left: 73%;
                 top: 35%;
