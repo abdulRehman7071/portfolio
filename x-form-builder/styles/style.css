@@ -1,0 +1,482 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  background-color: black;
+}
+
+.edit_button {
+  width: 100px;
+  height: 35px;
+  position: relative;
+  left: 164px;
+  border-radius: 10px;
+}
+
+main {
+  background-color: rgb(246, 249, 255);
+  display: flex;
+  flex-direction: column;
+}
+main header nav {
+  display: flex;
+  justify-content: end;
+  height: 10%;
+  padding: 10px;
+  box-shadow: 1px 2px rgb(206, 203, 203);
+}
+main header nav a {
+  padding: 1rem;
+}
+main .hidden {
+  display: none;
+}
+main #show {
+  display: block;
+}
+main .container {
+  display: flex;
+  flex-direction: column;
+}
+main .container .form_heading_buttons {
+  padding: 1rem;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+}
+main .container .form_heading_buttons .preview_submit_cancel_btn {
+  display: flex;
+  justify-content: center;
+}
+main .container .form_heading_buttons .preview_submit_cancel_btn :nth-child(1) {
+  background-color: #66d9ed;
+}
+main .container .form_heading_buttons .preview_submit_cancel_btn :nth-child(2) {
+  background-color: #DF058D;
+}
+main .container .form_heading_buttons .preview_submit_cancel_btn button {
+  padding: 1rem;
+  color: white;
+  margin: 0.5rem;
+  border: none;
+  background-color: #ff6b2b;
+  border-radius: 0.7rem;
+}
+main .container .form_heading_buttons .dragging_item_div__heading {
+  background-color: black;
+  color: #DF058D;
+}
+main .container .form_heading_buttons .dragging_item_div__heading p {
+  color: #ff6b2b;
+}
+main .container .dragging_item_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: black;
+  color: #66d9ed;
+  position: sticky;
+  top: 0px;
+}
+main .container .dragging_item_div .inputs {
+  display: flex;
+}
+main .container .dragging_item_div .inputs .input {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+}
+main .container .dragging_item_div .inputs .input .input-elements {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding: 1rem;
+}
+main .container .dragging_item_div .inputs .input .input-elements section {
+  margin-top: 1rem;
+  border: 0.1px solid black;
+  height: 5rem;
+  width: 8rem;
+  background-color: black;
+  cursor: grab;
+  background-color: black;
+  border: 2px solid #66d9ed;
+}
+main .container .dragging_item_div .inputs .input .input-elements section p {
+  margin: 3rem;
+}
+main .container .dragging_item_div .inputs .input .fa-image {
+  position: absolute;
+  left: 23%;
+  top: 35%;
+}
+main .container .dragging_item_div .inputs .input .fa-pen-to-square {
+  position: absolute;
+  left: 73%;
+  top: 35%;
+}
+main .container .dragging_item_div .inputs .input .fa-circle-dot {
+  position: absolute;
+  left: 23%;
+  top: 35%;
+}
+main .container .dragging_item_div .inputs .input .fa-square-check {
+  position: absolute;
+  left: 73%;
+  top: 35%;
+}
+main .container .dragging_item_div .body-selection, main .container .dragging_item_div .fo-selection {
+  display: flex;
+  flex-direction: column;
+  height: 7rem;
+  width: 100%;
+  justify-content: space-around;
+  background-color: black;
+}
+main .container .dragging_item_div .body-selection .background-selection, main .container .dragging_item_div .fo-selection .background-selection, main .container .dragging_item_div .fo-selection .footer-selection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+main .container .dragging_item_div .body-selection .background-selection .color_box, main .container .dragging_item_div .fo-selection .background-selection .color_box, main .container .dragging_item_div .fo-selection .footer-selection .color_box {
+  margin: 2%;
+  margin-top: 5%;
+  height: 1.2rem;
+  width: 1.2rem;
+}
+main .container .dragging_item_div .body-selection .background-selection button, main .container .dragging_item_div .fo-selection .background-selection button, main .container .dragging_item_div .fo-selection .footer-selection button {
+  width: 9rem;
+  height: 3rem;
+  text-align: center;
+}
+main .container .dragging_item_div .body-selection .background-selection .margin-top, main .container .dragging_item_div .fo-selection .background-selection .margin-top, main .container .dragging_item_div .fo-selection .footer-selection .margin-top {
+  margin-top: 4%;
+}
+main .container .blue_font {
+  color: blue;
+  font-size: 1.5rem;
+}
+main .container .right-container {
+  display: flex;
+  background-color: black;
+  border: 1px solid #DF058D;
+  padding: 1rem;
+}
+main .container .right-container .images_section {
+  width: 70%;
+}
+main .container .right-container .images_section .right-top-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+main .container .right-container .images_section .right-top-container section {
+  color: #66d9ed;
+  text-align: center;
+}
+main .container .right-container .images_section .right-top-container .header_logo {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+main .container .right-container .images_section .right-top-container .header_logo .right-top-logo {
+  width: 27%;
+  height: 9rem;
+  border: 1px dashed #DF058D;
+  display: flex;
+  align-items: center;
+}
+main .container .right-container .images_section .right-main-container {
+  color: #ff6b2b;
+}
+main .container .right-container .images_section .right-main-container .right-main {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  background-color: black;
+  text-align: center;
+  width: 100%;
+}
+main .container .right-container .images_section .right-main-container .right-main .right-body-img {
+  height: 20rem;
+  border: 1px dashed #DF058D;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem;
+}
+main .container .right-container .images_section .right-main-container .right-main .right-body-img p {
+  margin: 1rem;
+}
+main .container .right-container .images_section .right-main-container .right-main .right-body-img input {
+  margin-left: 10%;
+}
+main .container .right-container .images_section .right-main-container .right-main .right-body-img #banner_img {
+  max-width: 100%;
+  min-height: 50%;
+}
+main .container .right-container .images_section .right-main-container .right-footer {
+  display: flex;
+  background-color: black;
+  justify-content: space-around;
+  padding: 1rem;
+}
+main .container .right-container .images_section .right-main-container .right-footer .footer-components {
+  width: 30%;
+  border: 1px dashed #DF058D;
+  height: 9rem;
+}
+main .container .right-container .form_inputs {
+  width: 30%;
+  border: 1px solid #DF058D;
+  margin-right: 1rem;
+  color: #66d9ed;
+  text-align: center;
+}
+main .container .right-container .form_inputs .right-element-box {
+  background-color: black;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+main .container .right-container .form_inputs .right-element-box .form-elements {
+  height: 90%;
+}
+
+.text_box {
+  height: 10%;
+  margin: 2rem;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  color: #DF058D;
+}
+.text_box input {
+  background-color: black;
+  border: 1px solid #66d9ed;
+  padding: 0.3rem;
+  color: #ff6b2b;
+}
+
+.btn {
+  height: 2rem;
+  width: 2rem;
+  color: white;
+}
+
+.red {
+  background-color: #ff6b2b;
+}
+
+.green {
+  background-color: #66d9ed;
+}
+
+.grey {
+  background-color: darkgray;
+  color: #ff6b2b;
+}
+
+.blue {
+  background-color: rgb(81, 125, 255);
+  color: #ff6b2b;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.fa-solid {
+  background-color: transparent;
+}
+
+.input_values {
+  width: 100%;
+}
+
+.edit_form_elements .edit_popup {
+  border-radius: 4px;
+  top: 0;
+  width: 35%;
+  background-color: black;
+  position: absolute;
+  z-index: 3;
+  margin-top: 10%;
+  margin-left: 35%;
+  display: none;
+  border: 2px solid rgb(255, 255, 255);
+}
+.edit_form_elements .edit_popup .popup_h1 {
+  background-color: #66d9ed;
+  height: 60px;
+}
+.edit_form_elements .edit_popup .p_popup {
+  background-color: black;
+  color: #ff6b2b;
+  margin-top: 2%;
+  margin-left: 3%;
+}
+.edit_form_elements .edit_popup .input_popup {
+  background-color: #66d9ed;
+  color: black;
+  width: 90%;
+  height: 30px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 3%;
+  border-radius: 5px;
+  border-color: grey;
+}
+.edit_form_elements .edit_popup .Checkbox {
+  display: flex;
+}
+.edit_form_elements .edit_popup .btn_popup_s, .edit_form_elements .edit_popup .btn_popup_c {
+  width: 100px;
+  height: 40px;
+  background-color: #66d9ed;
+  border: 0;
+  border-radius: 3px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 20%;
+  cursor: pointer;
+}
+.edit_form_elements .edit_popup .btn_popup_c {
+  background-color: #DF058D;
+  width: 100px;
+  margin-left: 20%;
+}
+.edit_form_elements .edit_form_content {
+  margin: 5px;
+  padding: 5px;
+  height: 18%;
+  font-size: 1rem;
+}
+.edit_form_elements .edit_form_content p {
+  width: 551px;
+  height: 2rem;
+}
+.edit_form_elements .edit_form_content input {
+  width: 33rem;
+  height: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+.edit_form_elements .edit_form_content #edit_chk_box {
+  margin: 1rem;
+  font-size: 1.5rem;
+  width: 40%;
+  position: relative;
+  right: 76px;
+}
+
+.fa-regular,
+.far {
+  font-weight: 500;
+  position: relative;
+  top: 33px;
+  left: 77px;
+  font-size: 21px;
+}
+
+.fa-solid {
+  font-weight: 500;
+  position: relative;
+  top: 33px;
+  left: 77px;
+  font-size: 21px;
+}
+
+#pop_up_select {
+  width: 98%;
+  height: 2rem;
+  border-radius: 10px;
+}
+
+#pop_up_check {
+  margin: 1rem;
+}
+
+.check_close_btn {
+  height: 20px;
+  width: 20px;
+  background-color: red;
+  position: relative;
+  left: 88px;
+  margin: 1rem;
+}
+
+.fa-xmark {
+  position: relative;
+  top: 0%;
+  left: 0%;
+}
+
+.pen {
+  position: relative;
+  top: 0%;
+  left: 0%;
+}
+
+#edit_element {
+  margin: 0.5rem;
+}
+
+.logos {
+  color: #ff6b2b;
+}
+
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 80%;
+  }
+  body main .container .form_heading_buttons .preview_submit_cancel_btn button {
+    height: 3rem;
+    width: 5rem;
+  }
+  body main .container .dragging_item_div .inputs {
+    flex-wrap: wrap;
+  }
+  body main .container .right-container {
+    flex-direction: column;
+  }
+  body main .container .right-container .form_inputs {
+    height: 50vh;
+    width: 100%;
+  }
+  body main .container .right-container .images_section {
+    width: 100%;
+  }
+  .edit_form_elements .edit_popup {
+    border-radius: 4px;
+    top: 100%;
+    width: 75%;
+    background-color: black;
+    position: absolute;
+    z-index: 3;
+    margin-top: 15%;
+    margin-left: 13%;
+  }
+}
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 60%;
+  }
+  body main .container .form_heading_buttons .preview_submit_cancel_btn button {
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */

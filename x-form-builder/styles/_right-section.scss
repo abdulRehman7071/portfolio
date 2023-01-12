@@ -1,0 +1,120 @@
+.right-container {
+    display: flex;
+    background-color: $bgColor;
+    border: 1px solid $primaryColor;
+    padding: 1rem;
+    .images_section {
+        width: 70%;
+        .right-top-container {
+           section{
+            color: $secondryColor;
+            text-align: center;
+           }
+
+            // background-color: gainsboro;
+
+            @include flex-col;
+            margin: 1rem;
+
+            .header_logo {
+                width: 100%;
+
+                display: flex;
+                justify-content: space-around;
+        
+
+                .right-top-logo {
+                    width: 27%;
+                    height: 9rem;
+                    border: 1px dashed $primaryColor;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+        .right-main-container {
+            // background-color: $bgColor;
+            // display: flex;
+            // flex-direction: column;
+            // // height: 100%;
+            color: $primaryColor_2;
+
+            .right-main {
+                display: flex;
+                flex-direction: column;
+                margin: 1rem;
+                background-color: $bgColor;
+
+                // justify-content: center;
+                text-align: center;
+                width: 100%;
+
+                .right-body-img {
+                    p{
+                        margin: 1rem;
+                    }
+                    input{
+                       margin-left: 10%;
+                    }
+                    height: 20rem;
+                    border: 1px dashed $primaryColor;
+                    @include flex-col;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 5rem;
+                    #banner_img {
+                        max-width: 100%;
+                        min-height: 50%;
+                    }
+                }
+               
+            }
+            .right-footer {
+                display: flex;
+                background-color: $bgColor;
+                justify-content: space-around;
+                padding: 1rem;
+                .footer-components {
+                    width: 30%;
+    
+                    border: 1px dashed $primaryColor;
+                    height: 9rem;
+                }
+            }
+        }
+        
+        
+    }
+    .form_inputs {
+        width: 30%;
+        border: 1px solid $primaryColor;
+        margin-right: 1rem;
+        color: $secondryColor;
+        text-align: center;
+
+        .right-element-box {
+            background-color: $bgColor;
+
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            // border: 2px solid rgb(0, 0, 0);
+            text-align: center;
+
+            .form-elements {
+                height: 90%;
+            }
+
+            // #register {
+            //     padding: 1rem;
+            //     width: 80%;
+            //     margin: 1rem;
+            //     border: none;
+            //     border-radius: 0.5rem;
+            //     background-color: orange;
+            //     color: white;
+            // }
+        }
+    }
+}
